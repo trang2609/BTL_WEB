@@ -1,0 +1,127 @@
+#wishlist {
+    overflow-x: auto;
+    font-family: "Montserrat", sans-serif;;
+}
+
+#wishlist h2{
+    font-size: 32px;
+    /*font-style: normal;*/
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Montserrat", sans-serif;
+    color: #6ac943;
+}
+
+#wishlist table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    border: 1px solid #6ac943;
+}
+
+#wishlist table img {
+    width: 70px;
+}
+
+#wishlist table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#wishlist table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#wishlist table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#wishlist table td:nth-child(4),
+#wishlist table td:nth-child(5),
+#wishlist table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#wishlist table thead {
+    border: 1px solid #6ac943;
+    border-left: none;
+    border-right: none;
+
+}
+
+#wishlist table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+
+}
+
+#wishlist table tbody tr td {
+    padding-top: 15px;
+}
+
+#wishlist table tbody td {
+    font-size: 13px;
+    overflow: visible;
+    text-overflow: clip; /* Hiển thị toàn bộ nội dung mà không cắt */
+    white-space: normal; /* Cho phép xuống dòng tự động */
+}
+
+/*đổi màu nút xóa*/
+.xoasp {
+    color: #6ac943; 
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay khi rê chuột vào nút */
+}
+
+.xoasp:hover {
+    color: #266C0B;
+}
+.dongia{
+    font-weight: bold;
+    color: #266C0B;
+}
+/*
+#subtotal button {
+    width: 100%;
+    background-color: #6AC943;
+    border: #6AC943;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+#subtotal button:hover {
+    color: #266C0B;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #6AC943;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #266C0B;
+    
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#subtotal table td {
+    width: 50%;
+    /*border: 1px solid white;
+    padding: 10px;
+    font-size: 13px;
+}*/
+
+

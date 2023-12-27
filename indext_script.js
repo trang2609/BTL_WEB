@@ -89,7 +89,7 @@ var giohang = new Array();
         }
 
 
-            console.log(giohang);
+           // console.log(giohang);
             showcountsp();
 
             //lưu giỏ hàng lên sesionStorage 
