@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --box-shadow:0 .5rem 1rem rbga(0,0,0.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: width none;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+
+}
+
+h4{
+    font-size: 20px;
+    color: #6AC943;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+body {
+    width: 100%;
+}
+
+.header .header-1{
+    background: #6AC943;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #302C2C;
+}
+.header .header-1 .logo i{
+    color:#302C2C;
+}
+.header .header-1 .search-form{
+    width: 40rem;
+    height: 3rem;
+    border: none;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.header .header-1 .search-form input{
+    font-size: 1.5rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: #302C2C;
+    border:#fff;
+    border-radius: 20px;
+}
+.header .header-1 .search-form label{
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    color:#302C2C;
+    cursor: pointer;
+}
+.header .header-1 .search-form label:hover{
+    color:#266C0B;
+    border:#fff;
+}
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    border: none;
+    color:#302C2C;
+    cursor: pointer;
+    position: relative;
+}
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+    color:#266C0B;
+}
+#search-btn{
+    display: none;
+}
+/*menu*/
+.header .header-2{
+    background: #fbf8d7;
+    padding: 20px;
+    color:#6AC943;
+  }
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#6ac943;
+  }
+  
+  #navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+  }
+  #navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:550;
+    transition: 0.3s ease;
+    color: #6AC943;
+  }
+  
+
+/*Tạo hiệu ứng hover*/
+#navbar li a:hover,
+#navbar li a.active{
+    color: #266C0B;
+}
+#navbar li a.active::after,
+#navbar li a:hover:after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background-color:#266C0B ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*Dropdown menu*/
+#navbar ul {
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+/* Style cho dropdown */
+.dropdownnav {
+    width: 220px;
+    display: none; /* Ẩn dropdown mặc định */
+    position: absolute; /* Vị trí tuyệt đối */
+    top: 210%; /* Hiển thị dropdown từ phía dưới của mục cha */
+    left: 0;
+    background-color: #fff; /* Màu nền dropdown */
+    min-width: 120px; 
+    line-height: 3rem;
+
+}
+
+.dropdownnav li {
+    border-bottom: 1px solid #666; 
+}
+#navbar li:hover .dropdownnav {
+    display: block; 
+}
+
+#navbar ul li:hover ul.dropdownnav{
+    display: block;
+}
+
+#mobile{
+    display: none;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+}    
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}   
+footer .logo{
+    margin-bottom: 30px;
+} 
+footer h4{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 14px;
+    margin: 0 0 8px;
+}
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #302C2C;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #302C2C;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+footer .install .row img{
+    border: 1px solid #266C0B;
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #266C0B;
+}
+
+/*Icon MXH hiển thị*/
+.main{
+    position: fixed; 	
+    bottom: 30px; 	
+    right: 20px;
+    margin-bottom: 0px;
+    padding-right: 0px;
+}
+
+.iconn{
+width: 50px;
+height: 50px;
+border-radius: 50px;
+background: #fff;
+margin: 20px;
+text-align: center;
+font-size: 30px;
+line-height: 50px;
+font-family: sans-serif;
+overflow: hidden;
+box-shadow: 5px 10px 20px rgba(150,150, 150, .3);
+transition: all .3s ease-out;
+}
+
+.iconn:hover{
+width: 50px;
+cursor: pointer;
+align-items: center;
+color: #eeeeee;
+}
+
+.iconn .fa-facebook-f{
+color:rgb(85, 58, 255);
+}
+
+.iconn .fa-facebook-messenger{
+color:rgb(85, 58, 255);
+}
+
+.iconn .fa-instagram{
+color:rgb(223, 19, 36);
+}
+
+.iconn .fa-youtube{
+color:rgb(234, 19, 19);
+}
+
+@media (max-width:799px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 250px;
+        background-color: #fbf8d7;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 50px 0 0 10px;
+        transition: 0.3s;
+        color: #302C2C;
+
+    }
+    #navbar.active{
+        left: 0px;
+    }
+    #navbar li{
+        margin-bottom: 30px;
+    }
+    #navbar li a{
+        color: #6AC943;
+    }
+    #navbar .dropdownnav{
+        margin-bottom: 0px;
+    }
+
+    #navbar .dropdownnav{
+        position: relative;
+        top: 15px;
+    }
+    #navbar .dropdownnav{
+        background: none;
+        line-height:normal;
+    }
+    #mobile{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 900px){
+    html{
+        font-size: 55%;
+    }
+    .header .header-1{
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .header .header-1{
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+    .header .header-1 .search-form{
+        position: absolute;
+        top: 107%;
+        right: 2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+    #search-btn.active{
+        top: 115%;
+    }
+    #mobile{
+        display: inline-block;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    #mobile{
+        display: inline-block;
+    }
+    
+}
