@@ -765,7 +765,7 @@ input[type="text"]{
 }
 
 .container {
-    width: 85%;
+    width: 85% ;/* Adjust the maximum width as needed */
     margin: 20px auto;
 }
 
@@ -785,16 +785,16 @@ input[type="text"]{
 .customer .item {
     padding: 20px;
     background: #f6f7f8;
-    display: flex;
-    flex-direction: column;
+    margin-right: 10px; /* Add margin between items (adjust as needed) */
 }
 
+
 .customer .item .boxflex {
-    display: flex;
+    flex-direction: column; /* Arrange items in a column */
 }
 
 .customer .item .text {
-    margin-right: 20px;
+    margin-top: 10px; /* Adjust the margin as needed */
 }
 
 .customer .item h1 {
@@ -804,9 +804,10 @@ input[type="text"]{
 
 .customer .item h1 span {
     color: #74B661;
-    font-size: 18px;
+    font-weight: 17px;
     font-weight: 300;
 }
+
 
 
 
